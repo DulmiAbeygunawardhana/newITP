@@ -42,18 +42,14 @@ export default class EditRadiologyPatient extends Component {
                 testingname: response.data.testingname,
                
             })
+
+            console.log(this.state);
         })
         .catch(function (error) {
             console.log(error);
         })
 
 }
-
-
-
-    
-
-
 
   onChangePatientName(e) {
       this.setState({
@@ -123,11 +119,10 @@ export default class EditRadiologyPatient extends Component {
     axios.post('http://localhost:5000/radiology/update/'+ this.props.match.params.id, radiology)
     .then(res => console.log(res.data));
 
-
-    window.location = '/'; 
+    window.location = '/viewRadiologyPatient'; 
 }
 
-                     
+
   render() {
 
     return (

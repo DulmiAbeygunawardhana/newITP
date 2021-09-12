@@ -2,6 +2,8 @@ import React from 'react';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import * as ImIcons from 'react-icons/im';
+import * as GiIcons from 'react-icons/gi';
+
 
 export const SidebarData = [
     {

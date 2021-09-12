@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { Link, Redirect } from "react-router-dom";
 import DatePicker from "react-datepicker";
-
+import './radiology.css';
 
 import "react-datepicker/dist/react-datepicker.css";
+
 
 export default class CalcCost extends Component {
     constructor(props) {
@@ -75,7 +76,7 @@ export default class CalcCost extends Component {
     onSubmit(e) {
         e.preventDefault();
 
-        const salary = {
+        const cost = {
             _id: this.state._id,
             patientname: this.state.patientname,
             date: this.state.date,
@@ -85,13 +86,13 @@ export default class CalcCost extends Component {
             totalCost: this.state.totalCost
         }
 
-        console.log(scost);
+        console.log(cost);
 
         axios.post('http://localhost:5000/cost/add', cost)
             .then(res => console.log(res.data));
 
-        alert("Cost Entry Added!");
-        window.location = '/calcCost'
+        alert("Successfully genarate report!");
+        window.location = '/viewCost';
     }
 
 
@@ -100,10 +101,10 @@ export default class CalcCost extends Component {
 
             <div className="calcCostPage">
                 <br />
-                <Link to="/viewCost">View All Cost Details</Link>
+                <button className="viewAllCostBtn"><Link to="/viewCost">View All Cost Details</Link></button>
                 <br />
-                <h3>PATIENT COST CALCULATION</h3>
-                <form onSubmit={this.onSubmit} className="container">
+                <form onSubmit={this.onSubmit} className="container" id="calcForm">
+                <h3 className="calcCostTitle">PATIENT COST CALCULATION</h3>
                     <div className="form-group">
                         <label>Date: </label>
                         <div>

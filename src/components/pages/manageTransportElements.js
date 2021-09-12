@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ManageRadiologyPatientContainer = styled.div`
+export const ManageTransportContainer = styled.div`
     height: 500px;
     display: flex;
     flex-direction: column;
@@ -14,7 +14,7 @@ export const ManageRadiologyPatientContainer = styled.div`
         height: 1300px;
     }
 `
-export const ManageRadiologyPatientWrapper = styled.div`
+export const ManageTransportWrapper = styled.div`
     max-width: 1000px;
     margin: 0 auto;
     display: grid;
@@ -31,7 +31,7 @@ export const ManageRadiologyPatientWrapper = styled.div`
     }
 `
 
-export const ManageRadiologyPatientCard = styled.div`
+export const ManageTransportCard = styled.div`
     background: #fff;
     display: flex;
     flex-direction: column;
@@ -49,13 +49,13 @@ export const ManageRadiologyPatientCard = styled.div`
     }
 `
 
-export const ManageRadiologyPatientIcon = styled.img`
+export const ManageTransportIcon = styled.img`
     height: 160px;
     width: 160px;
     margin-bottom: 10px;
 `
 
-export const ManageRadiologyPatientH1 = styled.h1`
+export const ManageTransportH1 = styled.h1`
     font-size: 2.5rem;
     color: black;
     margin-bottom: 32px;
@@ -64,7 +64,7 @@ export const ManageRadiologyPatientH1 = styled.h1`
     }
 `
 
-export const ManageRadiologyPatientH2 = styled.h2`
+export const ManageTransportH2 = styled.h2`
     font-weight:bold,
     font-size: 1rem;
     margin-bottom: 10px;

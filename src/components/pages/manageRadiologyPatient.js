@@ -11,10 +11,10 @@ import { ManageRadiologyPatientContainer, ManageRadiologyPatientH1, ManageRadiol
 
 function ManageRadiologyPatient() {
     return (
-        <div className="manageRadiologyPatient">
-            <h3>RADIOLOGY AND IMAGING MANAGEMENT</h3>
+        <div>
+            <h3 className="radiologyManageTitle">RADIOLOGY AND IMAGING MANAGEMENT</h3>
 
-            <ManageRadiologyPatientContainer id='manageRadiologyPatient'>
+            <ManageRadiologyPatientContainer className='manageRadiologyPatient'>
                 <ManageRadiologyPatientH1>Select task to continue</ManageRadiologyPatientH1>
                 <ManageRadiologyPatientWrapper>
                     <ManageRadiologyPatientCard>

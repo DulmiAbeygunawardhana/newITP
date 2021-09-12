@@ -1,11 +1,228 @@
-.addRadiologyPatient{
-    background-color:lightgray;
+.radiology{
+  background-color: #11105e;
+  background-size: cover;
 }
 
-.viewRadiologyPatient{
-    background-color:lightgray;
-  }
 
-  .editRadiologyPatient{
-    background-color:lightgray;
-  }
+.addRadiologyPatient{
+  background: url("https://www.forbesindia.com/fbimages/900x600/proportional/jpeg/blog/wp-content/uploads/2018/07/BG_shutterstock_1127102579.jpg") no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.form-group{
+  width: 80%;
+  background: transparent;
+  background: rgba(28, 145, 135, 0.5);
+  padding: 10px;
+  margin: 0 auto;
+  display: grid;
+  max-width: 700px;
+}
+
+.form-addselect{
+  width: 80%;
+  background: transparent;
+  background: rgba(28, 145, 135, 0.5);
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 700px;
+
+}
+
+.form{
+  width: 60%;
+  padding: 10px;
+  margin: 0 auto;
+  display: grid;
+  max-width: 500px;  
+}
+
+#b1{
+  background-color: #071a52;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+}
+
+.editRadiologyPatient{
+  background: url("https://www.lalchandanipathlab.com/assets/upload/blogs/1565111048_radiology.jpg") no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+
+}
+
+
+.form-edit{
+  width: 80%;
+  background: transparent;
+  background: rgba(42, 152, 172, 0.5);
+  padding: 10px;
+  margin: 0 auto;
+  display: grid;
+  max-width: 700px;
+}
+
+.form-editselect{
+  width: 80%;
+  background: transparent;
+  background: rgba(42, 152, 172, 0.5);
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 700px;
+
+}
+
+#b0{
+  background-color: #002651;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+}
+.viewRadiologyPatient{
+  background: url("https://img.freepik.com/free-photo/doctor-examine-mri-picture-medical-equipment-medical_179755-761.jpg?size=626&ext=jpg") no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.calcCost{
+  background: url("https://images.sampletemplates.com/wp-content/uploads/2015/09/Construction-Budget-Samples.jpg") no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-size: cover;
+  position: relative;
+
+}
+
+.form-calculation{
+  width: 80%;
+  background: transparent;
+  background: #91867980;
+  padding: 10px;
+  margin: 0 auto;
+  display: grid;
+  max-width: 800px;
+}
+
+h5{
+  display: flex;
+  height: 10vh;
+  color: #430d27;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+#b2{
+  background-color: #713045;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+}
+
+
+#b3{
+  background-color: #582233;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+}
+
+h2{
+  display: flex;
+  height: 10vh;
+  color: #000000;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.form-btn{
+  width: 60%;
+  padding: 10px;
+  margin: 0 auto;
+  display: grid;
+  max-width: 800px;
+}
+
+
+p{
+  font-size: 30px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+}
+
+table ,tr,td{
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+td{
+  padding:15px;
+}
+
+tr:nth-child(even)
+{
+ background-color: #18acb9;
+}
+ 
+tr:nth-child(odd)
+{
+ background-color: #2f0986;
+}
+
+th:nth-child(odd){
+  background-color:#7c23a0;
+}
+
+th:nth-child(even){
+  background-color: #5439b6;
+}
+
+
+
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #FFD700;
+  color:#122d42;
+}
+
+#b6{
+  color: #d72323;
+}
+
+  

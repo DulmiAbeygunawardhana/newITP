@@ -41,8 +41,6 @@ onChangePatientName(e) {
     });
   }
 
-
-
 onChangeEmail(e) {
   this.setState({
       email: e.target.value
@@ -83,6 +81,14 @@ onChangeTestingName(e) {
 onSubmit(e) {
   e.preventDefault();
 
+  let g = document.getElementById("Gender").value;
+
+  console.log(g);
+
+  this.setState({
+    gender: g
+ });
+
   const radiology = {
     patientname: this.state.patientname,
     nic: this.state.nic,
@@ -96,17 +102,25 @@ onSubmit(e) {
 
 console.log(radiology);
 
-axios.post('http://localhost:5000/radiology/add', radiology)
-            .then(res => console.log(res.data));
+ axios.post('http://localhost:5000/radiology/add', radiology)
+             .then((res)=> {console.log(res.data)
+                alert("Patient Added");
 
-window.location = '/viewRadiologyPatient'; 
+                
+ window.location = '/viewRadiologyPatient'; 
+            
+            });
+             
 
 }
   render() {
     return (
-      <div className='addRadiologyPatient'>
-      <div className='container'>
-          <h3>Add Radiology Patient </h3>
+      <div className='addRadiologyPatientPage'>
+      <br />
+     
+      <div className='container' id="addRadiologyPatientForm">
+          <h3 className="addRadiologyPatientTitle">ADD RADIOLOGY PATIENT </h3>
+          <br />
           <form onSubmit={this.onSubmit}>
               <div className="form-group">
                   <label>PatientName: </label>
@@ -164,14 +178,14 @@ window.location = '/viewRadiologyPatient';
                   />
               </div>
               <div className="form-group">
-                  <label>Gender: </label>
-                  <input type="text"
-                      required
-                      className="form-control"
-                      value={this.state.gender}
-                      onChange={this.onChangeGender}
-                  />
-              </div>
+              <label>Gender:
+                   <select id ="Gender" value={this.state.gender}
+                       onChange={this.onChangeGender}>
+                       <option value="Male">Male</option>
+                       <option value="Female">Female</option>
+                    </select>
+              </label>
+             </div>
               <div className="form-group">
                   <label>TestingName: </label>
                   <input type="text"
@@ -183,7 +197,8 @@ window.location = '/viewRadiologyPatient';
               </div>
               <br />
               <div className="form-group">
-                  <input type="submit" value="Add Radiology Patient" className="btn btn-primary" />
+                  <input type="submit" value="ADD RADIOLOGY PATIENT" className="btn btn-primary" />
+                  <br />
               </div>
           </form>
       </div>
