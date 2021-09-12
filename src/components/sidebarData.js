@@ -48,7 +48,7 @@ export const SidebarData = [
     },
     {
         title: 'Transport',
-        path: '/',
+        path: '/manageTransport',
         icon: <FaIcons.FaAmbulance />,
         cName: 'nav-text'
     },
